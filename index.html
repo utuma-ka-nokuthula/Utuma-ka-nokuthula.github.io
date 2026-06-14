@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>utuma-ka-nokuthula | Writer • Poet • Storyteller</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+    background:#0f0f0f;
+    color:#f5f5f5;
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:#d4af37;
+}
+
+header{
+    background:#000;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid #222;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
+
+.logo{
+    font-size:1.2rem;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.nav-links a{
+    margin-left:20px;
+}
+
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+    url('my-photo.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    color:#ddd;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#d4af37;
+    color:#000;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+    color:#d4af37;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:10px;
+}
+
+.books{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.book-card{
+    background:#181818;
+    border:1px solid #2a2a2a;
+    border-radius:10px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.book-card:hover{
+    transform:translateY(-5px);
+}
+
+.book-card img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+.book-content{
+    padding:20px;
+}
+
+.book-content h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+.book-buttons{
+    margin-top:20px;
+}
+
+.book-buttons a{
+    display:inline-block;
+    margin-right:10px;
+    margin-bottom:10px;
+    padding:10px 15px;
+    border-radius:5px;
+    background:#d4af37;
+    color:#000;
+    font-weight:bold;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin-bottom:15px;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:40px 20px;
+    border-top:1px solid #222;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+@media(max-width:768px){
+
+.about{
+    grid-template-columns:1fr;
+}
+
+.hero-content h1{
+    font-size:2.2rem;
+}
+
+.nav-links{
+    display:none;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">utuma-ka-nokuthula</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#books">Books</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>utuma-ka-nokuthula</h1>
+
+<p>Writer • Poet • Storyteller</p>
+
+<p>
+Words for the silent heart.
+Stories of love, faith, healing, gratitude,
+identity, and the journeys we carry within.
+</p>
+
+<a href="#books" class="btn">Explore My Books</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About the Author</h2>
+
+<div class="about">
+
+<img src="my-photo.jpg" alt="utuma-ka-nokuthula">
+
+<div>
+
+<p>
+utuma-ka-nokuthula is an African writer, poet, and storyteller from Rwanda whose work explores the silent depths of the human heart.
+</p>
+
+<br>
+
+<p>
+Through poetry, reflective prose, and storytelling, he writes about love, faith, healing, gratitude, identity, loss, and personal growth. His words are shaped by both lived experience and careful observation of the emotional journeys people carry within themselves.
+</p>
+
+<br>
+
+<p>
+Through works such as Dead Feelings, The Bridge of Worlds, and Izimfano Zabakhokho, he invites readers into stories and reflections that challenge, comfort, and inspire.
+</p>
+
+</div>
+
+</div>
+</section>
+
+<section id="books">
+
+<h2 class="section-title">Featured Books</h2>
+
+<div class="books">
+
+<div class="book-card">
+<img src="dead-feelings-cover.jpg" alt="Dead Feelings">
+
+<div class="book-content">
+<h3>Dead Feelings</h3>
+
+<p>
+A journey through the seasons of the heart exploring love, change, loss, healing, and growth.
+</p>
+
+<div class="book-buttons">
+<a href="#">Read Online</a>
+<a href="#contact">Contact Author for PDF</a>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<img src="bridge-of-worlds-cover.jpg" alt="The Bridge of Worlds">
+
+<div class="book-content">
+<h3>The Bridge of Worlds</h3>
+
+<p>
+A story of journeys, connections, and the spaces that exist between who we are and who we are becoming.
+</p>
+
+<div class="book-buttons">
+<a href="#">Read Online</a>
+<a href="#contact">Contact Author for PDF</a>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<img src="izimfano-zabakhokho-cover.jpg" alt="Izimfano Zabakhokho">
+
+<div class="book-content">
+<h3>Izimfano Zabakhokho</h3>
+
+<p>
+Inspired by ancestral wisdom, culture, heritage, and the stories passed from one generation to the next.
+</p>
+
+<div class="book-buttons">
+<a href="#">Read Online</a>
+<a href="#contact">Contact Author for PDF</a>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Contact the Author</h2>
+
+<p>
+For downloadable copies, collaborations, feedback, or inquiries,
+please contact me directly.
+</p>
+
+<p>
+📧 Email: utumamubraque@gmail.com
+</p>
+
+<p>
+📱 Phone: +250 780 894 984
+</p>
+
+<p>
+📱 Phone: +250 795 458 366
+</p>
+
+<p>
+📷 Instagram:
+<a href="https://www.instagram.com/ka_nokuthula__?igsh=MXR0Mnl2ZHc2Nzd2dg==" target="_blank">
+@ka_nokuthula__
+</a>
+</p>
+
+<p>
+📨 Telegram:
+<a href="https://t.me/Utuma_ka_nokuthula" target="_blank">
+@Utuma_ka_nokuthula
+</a>
+</p>
+
+</section>
+
+<footer>
+
+<p><strong>utuma-ka-nokuthula</strong></p>
+
+<p>Writer • Poet • Storyteller</p>
+
+<p>
+Dead Feelings • The Bridge of Worlds • Izimfano Zabakhokho
+</p>
+
+<p>
+© 2026 utuma-ka-nokuthula. All Rights Reserved.
+</p>
+
+<p>
+"Some feelings die, but the heart that carried them learns how to live again."
+</p>
+
+</footer>
+
+</body>
+</html>
